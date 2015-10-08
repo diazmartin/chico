@@ -519,7 +519,7 @@
                     // From/to range. Disabling cells
                     (
                         // Disable cell if it's out of FROM range
-                        (that._dates.range.from && day < that._dates.range.from.day && date.month === that._dates.range.from.month && date.year === that._dates.range.from.year) ||
+                        (that._dates.range.from && day <= that._dates.range.from.day && date.month === that._dates.range.from.month && date.year === that._dates.range.from.year) ||
 
                         // Disable cell if it's out of TO range
                         (that._dates.range.to && day > that._dates.range.to.day && date.month === that._dates.range.to.month && date.year === that._dates.range.to.year)
